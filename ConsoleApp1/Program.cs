@@ -4,9 +4,16 @@ using ConsoleApp1.utilities;
 
 Console.WriteLine("Hello ...");
 
- //ArrayDemo.ArrayDemo03();
+//ArrayDemo.ArrayDemo03();
 
- ListDemo.ListDemo03();
+//ListDemo.ListDemo03();
+
+DictionaryDemo.show04();
+
+
+
+
+
 
 
 

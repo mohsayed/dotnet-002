@@ -2,9 +2,12 @@
 using ConsoleApp1;
 using ConsoleApp1.utilities;
 
-Console.WriteLine("Hello, World!");
+Console.WriteLine("Hello ...");
 
- ArrayDemo.ArrayDemo03();
+ //ArrayDemo.ArrayDemo03();
+
+ ListDemo.ListDemo03();
+
 
 
 

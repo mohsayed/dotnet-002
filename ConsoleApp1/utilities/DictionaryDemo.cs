@@ -36,17 +36,19 @@ public static class DictionaryDemo
 
     public static void show03()
     {
-        // foreach (var element in vendors)
-        // {
-        //     var vendor = element.Value;
-        //     var key = element.Key;
-        //     Console.WriteLine($"Key: {key} Value: {vendor}");
-        // }
+        var vendors = VendorRepository.GetVendorsDict();
+        foreach (var element in vendors)
+        {
+            var vendor = element.Value;
+            var key = element.Key;
+            Console.WriteLine($"Key: {key} Value: {vendor}");
+        }
     }
 
     public static void show04 ()
     {
         var dict = VendorRepository.GetVendorsDict();
+        
         foreach (var item in dict)
         {
             Console.WriteLine($"Code: {item.Key}");
@@ -55,5 +57,36 @@ public static class DictionaryDemo
             Console.WriteLine();
         }
     }
+
+    public static void show05(int key)
+    {
+         Console.WriteLine("\n show5 \n");
+        var vendors = VendorRepository.GetVendorsDict();
+        var keyIsOk = vendors.ContainsKey(key);
+        if (keyIsOk)
+        {
+            Console.WriteLine(vendors[key]);
+        }
+        else
+        {
+            Console.WriteLine($"sorry key {key} wan not found");
+        }
+    }
+    public static void show06(int key)
+    {
+         Console.WriteLine("\n show 6 \n");
+        var vendors = VendorRepository.GetVendorsDict();
+        Vendor? vendor;
+        if (vendors.TryGetValue(key,out vendor))
+        {
+            Console.WriteLine(vendor);
+        }
+        else
+        {
+            Console.WriteLine($"sorry key {key} wan not found");
+        }
+    }
+
+
 
 }

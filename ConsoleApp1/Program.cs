@@ -8,7 +8,8 @@ Console.WriteLine("Hello ...");
 
 //ListDemo.ListDemo03();
 
-DictionaryDemo.show04();
+// DictionaryDemo.show03();
+DictionaryDemo.show06(9);
 
 
 

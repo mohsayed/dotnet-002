@@ -19,7 +19,7 @@ public static class VendorRepository
     {
         var vendors = new Dictionary<int, Vendor>()
             {
-                { 5, new Vendor()
+                { 5, new Vendor
                     { VendorId = 5, CompanyName = "ABC Corp", Email = "abc@abc.com" } },
                 { 8, new Vendor()
                     { VendorId = 8, CompanyName = "XYZ Inc", Email = "xyz@xyz.com" } }

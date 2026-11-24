@@ -22,7 +22,9 @@ public static class VendorRepository
                 { 5, new Vendor
                     { VendorId = 5, CompanyName = "ABC Corp", Email = "abc@abc.com" } },
                 { 8, new Vendor()
-                    { VendorId = 8, CompanyName = "XYZ Inc", Email = "xyz@xyz.com" } }
+                    { VendorId = 8, CompanyName = "XYZ Inc", Email = "xyz@xyz.com" } },
+                {12, new Vendor
+                     { VendorId = 12, CompanyName = "Textile Holding", Email = "info@ctihc.com"}}
             };
         return vendors;
     }

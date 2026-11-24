@@ -9,7 +9,7 @@ Console.WriteLine("Hello ...");
 //ListDemo.ListDemo03();
 
 // DictionaryDemo.show03();
-DictionaryDemo.show06(9);
+DictionaryDemo.show06(12);
 
 
 
